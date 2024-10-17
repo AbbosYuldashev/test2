@@ -44,6 +44,9 @@ public class PlayerController : MonoBehaviour
 
             // Optional: Pause the game if needed
             // Time.timeScale = 0f; // Uncomment if you want to pause the game
+        }else if (hitInfo.CompareTag("boss_bullet"))
+        {
+            GetComponent<HealthManager>().TakeDamage();
         }
     }
 
